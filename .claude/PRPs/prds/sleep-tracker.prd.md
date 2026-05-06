@@ -142,8 +142,8 @@ sleep_goals      (user_id, target_date, target_bedtime, target_wake_time, daily_
 
 | # | Phase | Description | Status | Parallel | Depends | PRP Plan |
 |---|-------|-------------|--------|----------|---------|----------|
-| 1 | プロジェクト基盤 | Expo Router, パッケージ導入, ディレクトリ構成, eas.json | in-progress | - | - | `.claude/PRPs/plans/phase-01-project-foundation.plan.md` |
-| 2 | DB スキーマ & RLS | Supabase マイグレーション SQL + RLS ポリシー | pending | - | 1 | - |
+| 1 | プロジェクト基盤 | Expo Router, パッケージ導入, ディレクトリ構成, eas.json | complete | - | - | `.claude/PRPs/plans/phase-01-project-foundation.plan.md` |
+| 2 | DB スキーマ & RLS | Supabase マイグレーション SQL + RLS ポリシー | in-progress | - | 1 | `.claude/PRPs/plans/phase-02-db-schema-rls.plan.md` |
 | 3 | 認証 | Apple Sign In + Supabase Auth + ルートガード | pending | - | 2 | - |
 | 4 | 睡眠記録機能 | 今日の就寝・起床記録（now/manual ラベル） | pending | with 5 | 3 | - |
 | 5 | 翌日目標宣言機能 | 目標時刻・テキスト宣言 + 不変ロック UI | pending | with 4 | 3 | - |
